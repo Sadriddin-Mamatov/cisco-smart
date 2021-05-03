@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/NavBar/Navbar'
+import Home from "./components/home"
+import ServiceContact from './components/ServiceContact';
+import Equipment from './components/Equipment/Equipment';
+import SmartNet from './components/SmartNet/SmartNet';
+import SmartElement from './components/SmartnetElement/SmartElement';
+import LivecycleAdvantage from './components/LivecycleAdvantage/LivecycleAdvantage';
+import AnswerQuestion from './components/FAQ/AnswerQuestion';
+import ContactSection from './components/Contact/ContactSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <div className="landing-page">
+            <Header/>
+            <Home/>
+            <ServiceContact/>
+            <Equipment/>
+            <SmartNet/>
+            <SmartElement/>
+            <LivecycleAdvantage/>
+            <AnswerQuestion/>
+            <ContactSection/>  
+        </div>     
+    </>
   );
 }
 
