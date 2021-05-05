@@ -40,7 +40,7 @@ const SmartNet = () => {
                         }}
                         >
                         <Fade in={open}>
-                        <div className="classes-paper">
+                        <div className="smartnet-video-box">
                             <video autoPlay className="modal-video" controls> 
                             {/* <source src={VideoSrc} type="video/mp4" /> */}
                             </video>

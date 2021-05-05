@@ -41,7 +41,7 @@ const Home = ()=> {
                 <div className="main-average">
                     <p className="main-header" data-aos="zoom-in" data-aos-duration="800">Cisco Smart Net Total Care™</p>
                     <p className="header-p" data-aos="zoom-in" data-aos-duration="800">Больше, чем гарантия</p>
-                    <div>
+                    <div className="main-button-box" >
                         <button type="button" onClick={handleOpen} className=" btn btn-light main-button">
                            Смотреть видео о сервисах
                         </button>

@@ -25,10 +25,10 @@ export default function Header(props) {
     }
     useEffect(() => {
         showButton()
-    }, [])
+    }, [button])
     window.addEventListener('resize', showButton)
     const handleClick = () => setClick(!click)
-    console.log(button)
+ 
    const changeBackground = () => {
        
        if(window.scrollY >= 80) {

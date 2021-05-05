@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+.cover-faq{
+    background-color: #fff;
+}
 .main-faq{
     background-color: #fff;
     display: flex;
@@ -38,23 +41,41 @@
     font-size: 16px !important;
     color:#192167 !important;
 }
+.faq-again{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+
+}
 .add{
-    width:100% !important;
-    border:transparent !important;
+    width:70% !important;
 }
 .addition{
-    padding:10px 30px !important;
-    background-color: #192167 !important;
+    width: 100% !important;  
     color:#FFF !important;
 }
+.faq-again-button{
+    width:100% !important;
+    background-color: #192167 !important;
+    padding:10px 30px !important;
+
+}
 .addition-hidden{
+    padding:50px;
     color:#192167 !important;
+    font-size:14px !important;
 
 }
 .bottom-line{
     width: 100%;
     border-bottom: 2px solid #192167;
 }
+.question{
+    background-color: rgb(177, 221, 238);
+    margin:6px 0;
+}
+
 @media only screen and (min-width:591px) and (max-width:876px){
     .faq-img-box{
         margin: 10px;
@@ -104,5 +125,32 @@
     }
     .hidden-faq{
         font-size: 12px !important;
+    }
+    .add{
+        width:90% !important;
+    }
+    .addition{
+        width: 100% !important;  
+        color:#FFF !important;
+    }
+    .faq-again-button{
+        width:100% !important;
+        background-color: #192167 !important;
+        padding:10px 30px !important;
+        font-size:14px !important;
+    
+    }
+    .addition-hidden{
+        padding:0px;
+        font-size:12px !important;
+    
+    }
+    .bottom-line{
+        width: 100%;
+        border-bottom: 2px solid #192167;
+    }
+    .question{
+        background-color: rgb(177, 221, 238);
+        padding:16px 0;
     }
 }

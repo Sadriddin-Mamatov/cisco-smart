@@ -231,7 +231,9 @@
     width: 40%;
 }
 .information .video-box .service-video{
-    display: block;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     width:100%;
     height:340px;
 
@@ -264,7 +266,7 @@
     border: 2px solid #7397fc;
     height: 85px;
   }
- 
+
   @media only screen and (min-width:701px) and (max-width:960px){
       .equipmentreplacement{
           padding: 30px 0;

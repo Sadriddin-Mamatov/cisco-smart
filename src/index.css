@@ -33,7 +33,6 @@ body{
  
 }
 .main-average{
-  text-align:center;
   padding-top: 100px;
 }
 .main-header{
@@ -56,6 +55,9 @@ margin-left: 200px !important;
 margin-bottom: 60px;
 
 
+}
+.main-button-box{
+  text-align: center !important;
 }
 .main-button{
   display: flex;

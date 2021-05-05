@@ -8,7 +8,7 @@ const ServiceContact =()=> {
 
         return (
 
-            <div className="second" id="serviceContact">
+            <div className="second">
                 <div className="service-left" data-aos="fade-right"  data-aos-duration="600">
                     <div className="second-text">Сервисные контракты Cisco Smart Net</div>
                     <a href="#service" className="btn second-button" >Получить консультацию</a>

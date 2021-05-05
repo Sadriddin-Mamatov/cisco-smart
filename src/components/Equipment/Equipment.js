@@ -5,13 +5,15 @@ import Close from '../../img/Close.png';
 import Settings from '../../img/Settings.png';
 import Human from '../../img/Man.png';
 import Back from '../../img/Back.png';
+// import { ReactVideo } from "reactjs-media";
+// import poster from '../../img/Rectangle 12.png';
 // import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
 import "aos/dist/aos.css";
 import "./Equipment.css";
 const Equipment =()=> {
     // const videoSrc= Cisco;
         return (
-         <div className="equipment" id="equipment">
+         <div className="equipment" id="serviceContact">
              <div className="equipmentreplacement">
                  <h2>Замена оборудования</h2>
                     <div className="up-group">
@@ -122,8 +124,13 @@ const Equipment =()=> {
                     </div>
                 <div className="video-box" data-aos="fade-down-left" data-aos-duration="1000">
                     <div>
-                        {/* <VideoPlayer src={videoSrc} className="service-video" playbackRate={[0.5, 1, 1.5, 2, 2.5, 3]}/> */}
-                    </div>
+                      {/* <ReactVideo
+                        src={videoSrc}
+                        poster={poster}
+                        primaryColor="#456"
+                        className="service-video"
+                         /> */}
+                   </div>
                     <button className="btn video-button">Проверить мое оборудование</button>
                 </div>
              </div>

@@ -15,7 +15,6 @@ import './ContactSection.css'
 
    
 
-
    const handleSubmit = (e) => {
         e.preventDefault();  
        console.log(state)
