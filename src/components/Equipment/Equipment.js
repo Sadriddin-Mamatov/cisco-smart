@@ -250,7 +250,6 @@ const Equipment =()=> {
                             </Fade>
                         </Modal>
                     </div>
-                 <p className="mobile-p-bottom">Замена и возврат неисправного оборудования по сервисному контракту Cisco</p>
              </div>
              <div className="equipmentreplacement">
                  <h2>Замена оборудования</h2>
