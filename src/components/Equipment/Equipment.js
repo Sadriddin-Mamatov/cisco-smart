@@ -66,6 +66,8 @@ const Equipment =()=> {
         return (
          <div className="equipment" id="serviceContact">
              <div className="mobile-version">
+                 <h4>Замена оборудования</h4>
+                 <p className="mobile-p-top">Нажмите на одну из иконок, чтобы увидеть описание</p>
                 <div className="first-box">
                  <div className="mobile-first"  onClick={handleOpen} alt="mobile-home-icon">
                      <img src={FirstImg} className="circle-icon" alt="mobile-home-icon"/>
@@ -160,7 +162,7 @@ const Equipment =()=> {
                             >
                             <Fade in={third}>
                             <div className="wrapper-paper">
-                                    <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="1000">
+                                    <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="800">
                                             <div className="l28">
                                                 <div className="group28">
                                                     <div className="cover">
@@ -248,7 +250,7 @@ const Equipment =()=> {
                             </Fade>
                         </Modal>
                     </div>
-                 
+                 <p className="mobile-p-bottom">Замена и возврат неисправного оборудования по сервисному контракту Cisco</p>
              </div>
              <div className="equipmentreplacement">
                  <h2>Замена оборудования</h2>
