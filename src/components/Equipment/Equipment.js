@@ -10,17 +10,17 @@ import Close from '../../img/Close.png';
 import Settings from '../../img/Settings.png';
 import Human from '../../img/Man.png';
 import Back from '../../img/Back.png';
-import { ReactVideo } from "reactjs-media";
-import poster from '../../img/Rectangle 12.png';
+// import { ReactVideo } from "reactjs-media";
+// import poster from '../../img/Rectangle 12.png';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
+// import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
 import "aos/dist/aos.css";
 import "./Equipment.css";
 
 const Equipment =()=> {
-    const videoSrc= Cisco;
+    // const videoSrc= Cisco;
     const [open, setOpen] = useState(false);
     const [second, setSecond] = useState(false);
     const [third, setThird] = useState(false);
@@ -360,12 +360,12 @@ const Equipment =()=> {
                     </div>
                 <div className="video-box" data-aos="fade-down-left" data-aos-duration="1000">
                     <div>
-                      <ReactVideo
+                      {/* <ReactVideo
                         src={videoSrc}
                         poster={poster}
                         primaryColor="#456"
                         className="service-video"
-                         />
+                         /> */}
                    </div>
                     <button className="btn video-button">Проверить мое оборудование</button>
                 </div>
