@@ -1,19 +1,255 @@
-import React from "react";
+import React, {useState} from "react";
 // import VideoPlayer from 'react-video-js-player';
+import FirstImg from "../../img/Ellipse 3.png";
+import SecondImg from "../../img/Ellipse 5.png";
+import ThirdImg from "../../img/Ellipse 7.png";
+import ThirdFour from "../../img/Ellipse 5.png";
+import FiveIcon from "../../img/Ellipse 3.png";
 import Home from '../../img/Home.png';
 import Close from '../../img/Close.png';
 import Settings from '../../img/Settings.png';
 import Human from '../../img/Man.png';
 import Back from '../../img/Back.png';
-// import { ReactVideo } from "reactjs-media";
-// import poster from '../../img/Rectangle 12.png';
-// import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
+import { ReactVideo } from "reactjs-media";
+import poster from '../../img/Rectangle 12.png';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
 import "aos/dist/aos.css";
 import "./Equipment.css";
+
 const Equipment =()=> {
-    // const videoSrc= Cisco;
+    const videoSrc= Cisco;
+    const [open, setOpen] = useState(false);
+    const [second, setSecond] = useState(false);
+    const [third, setThird] = useState(false);
+    const [four, setFour] = useState(false);
+    const [five, setFive] = useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+      };
+    
+      const handleClose = () => {
+        setOpen(false);
+      };
+
+      const handleOpen2 = () => {
+        setSecond(true);
+      };
+    
+      const handleClose2 = () => {
+        setSecond(false);
+      };
+      const handleOpen3 = () => {
+        setThird(true);
+      };
+    
+      const handleClose3 = () => {
+        setThird(false);
+      };
+      const handleOpen4 = () => {
+        setFour(true);
+      };
+    
+      const handleClose4 = () => {
+        setFour(false);
+      };
+      const handleOpen5 = () => {
+        setFive(true);
+      };
+    
+      const handleClose5 = () => {
+        setFive(false);
+      };
         return (
          <div className="equipment" id="serviceContact">
+             <div className="mobile-version">
+                <div className="first-box">
+                 <div className="mobile-first"  onClick={handleOpen} alt="mobile-home-icon">
+                     <img src={FirstImg} className="circle-icon" alt="mobile-home-icon"/>
+                     <img src={Home} alt="mobile-home-icon" className="mobile-icon-first"/>
+                     
+                 </div>
+                 <Modal
+                        aria-labelledby="transition-modal-title"
+                        aria-describedby="transition-modal-description"
+                        className="do-modal"
+                        open={open}
+                        onClose={handleClose}
+                        closeAfterTransition
+                        BackdropComponent={Backdrop}
+                        BackdropProps={{
+                        timeout: 500,
+                        }}
+                        >
+                        <Fade in={open}>
+                        <div className="wrapper-paper">
+                            <div className="up-group">
+                                <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="1000">
+                                            <div className="l27">
+                                                <div className="group27">
+                                                    <div className="cover">
+                                                        <img src={Home} alt="home-icon" className="icon-img"/>
+                                                        <p className="group27-p">Открыть сервисный запрос на портале Cisco</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        </Fade>
+                    </Modal>
+                 </div>
+                 <div className="line-top"></div>
+                 <div className="mobile-avarage">
+                    <div className="first">
+                    <div className="ka"  onClick={handleOpen2}>
+                        <img src={SecondImg} className="circle-icon-second" alt="mobile-home-icon"/>
+                        <img src={Close} alt="mobile-close-icon" className="mobile-icon-second"/>
+                        
+                    </div>
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className="do-modal"
+                            open={second}
+                            onClose={handleClose2}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                            >
+                            <Fade in={second}>
+                            <div className="wrapper-paper">
+                                    <div className="equipment-groups" data-aos="fade-right" data-aos-duration="1000">
+                                                <div className="l29">
+                                                    <div className="group29">
+                                                        <div className="cover">
+                                                            <img src={Close} alt="close-icon" className="icon-img"/>
+                                                            <p className="group29-p">Закрыть сервисный запрос</p>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                            </div>
+                            </Fade>
+                        </Modal>
+                    </div>
+                    <div className="avarage-left"></div>
+                    <div className="first">
+                    <div className="mobile-third"  onClick={handleOpen3}>
+                        <img src={ThirdImg} className="circle-icon-third" alt="mobile-home-icon"/>
+                        <img src={Settings} alt="mobile-settings-icon" className="mobile-icon-third"/>
+                        
+                    </div>
+                   
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className="do-modal"
+                            open={third}
+                            onClose={handleClose3}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                            >
+                            <Fade in={third}>
+                            <div className="wrapper-paper">
+                                    <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="1000">
+                                            <div className="l28">
+                                                <div className="group28">
+                                                    <div className="cover">
+                                                        <img src={Settings} alt="settings-icon" className="icon-img"/>
+                                                        <p className="group28-p">Получить решение проблемы от специалистов Cisco</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            </Fade>
+                        </Modal>
+                    </div>
+                    <div className="avarage-right"></div>
+                    <div className="first">
+                    <div className="mobile-four"  onClick={handleOpen4}>
+                        <img src={ThirdFour} className="circle-icon-four" alt="mobile-home-icon"/>
+                        <img src={Human} alt="mobile-human-icon" className="mobile-icon-four"/>
+                        
+                    </div>
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className="do-modal"
+                            open={four}
+                            onClose={handleClose4}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                            >
+                            <Fade in={four}>
+                            <div className="wrapper-paper">
+                                <div className="equipment-groups" data-aos="fade-left" data-aos-duration="1000">
+                                            <div className="l30">
+                                                <div className="group30">
+                                                    <div className="cover">
+                                                        <img src={Human} alt="man-icon" className="icon-img"/>  
+                                                        <p className="group30-p">RMA (Санкционирование возвращаемого материала. Авторизация на замену оборудования)</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+                            </Fade>
+                        </Modal>
+                    </div>
+                    
+                 </div>
+                 <div className="bottom-v"></div>
+                 <div className="bottom-h"></div>
+                 <div className="bottomr-v"></div>
+                 <div className="bottomr-h"></div>
+                 <div className="first">
+                    <div className="mobile-five"  onClick={handleOpen5}>
+                        <img src={Back} className="mobile-icon-five" alt="mobile-back-icon"/>
+                        <img src={FiveIcon} className="circle-circle-five" alt="mobile-back-icon"/>                    
+                    </div>
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className="do-modal"
+                            open={five}
+                            onClose={handleClose5}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                            >
+                            <Fade in={five}>
+                            <div className="wrapper-paper">
+                                <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="1000">
+                                    <div className="l32">
+                                        <div className="group32">
+                                            <div className="cover">
+                                                    <img src={Back} alt="back-icon" className="icon-img"/>
+                                                    <p className="group32-p">Возврат неисправного оборудования</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </Fade>
+                        </Modal>
+                    </div>
+                 
+             </div>
              <div className="equipmentreplacement">
                  <h2>Замена оборудования</h2>
                     <div className="up-group">
@@ -25,7 +261,7 @@ const Equipment =()=> {
                                                 <p className="group27-p">Открыть сервисный запрос на портале Cisco</p>
                                             </div>
                                         </div>
-                                    </div>
+                                </div>
                             </div>
                     </div>
                         <div className="avarage-group">
@@ -124,12 +360,12 @@ const Equipment =()=> {
                     </div>
                 <div className="video-box" data-aos="fade-down-left" data-aos-duration="1000">
                     <div>
-                      {/* <ReactVideo
+                      <ReactVideo
                         src={videoSrc}
                         poster={poster}
                         primaryColor="#456"
                         className="service-video"
-                         /> */}
+                         />
                    </div>
                     <button className="btn video-button">Проверить мое оборудование</button>
                 </div>
