@@ -265,6 +265,9 @@ const Equipment =()=> {
                                 </div>
                             </div>
                     </div>
+                    <div className="desktop-top-line"></div>
+                    <div className="desktop-left-line"></div>
+                    <div className="desktop-right-line"></div>
                         <div className="avarage-group">
                                 <div className="equipment-groups" data-aos="fade-right" data-aos-duration="1000">
                                         <div className="l29">
@@ -297,6 +300,10 @@ const Equipment =()=> {
                                         </div>
                                 </div>
                         </div>
+                        <div className="desktop-bottom-v"></div>
+                        <div className="desktop-bottom-h"></div>
+                        <div className="desktop-bottomr-v"></div>
+                        <div className="desktop-bottomr-h"></div>
                         <div className="down-group">
                             <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="1000">
                                 <div className="l32">
