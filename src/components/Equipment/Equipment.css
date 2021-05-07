@@ -79,6 +79,38 @@
     background-color: #5E4B84;
 }
 
+.video-react {
+    display: block;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    font-size: 10px;
+    line-height: 1;
+    font-family: serif, Times, "Times New Roman";
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.video-react .video-react-big-play-button {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    height: 1.5em;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border: 0.06666em solid #fff;
+    background-color: #2B333F;
+    background-color: rgba(43, 51, 63, 0.7);
+    border-radius: 0.3em;
+    transition: all 0.4s;
+}
 .desktop-bottomr-h{
     position: absolute;
     top:344%;
@@ -332,15 +364,71 @@
      height: 35px;
      border-radius: 50%;
      padding:5px;
-
+ }
+ .equipment-groups{
+     position: relative;
+     z-index: 5;
  }
   @media only screen and (min-width:701px) and (max-width:960px){
       .equipmentreplacement{
           padding: 30px 0;
       }
+      .desktop-top-line{
+        position: absolute;
+        top:255%;
+        left:50%;
+        width:5px;
+        height:50px;
+        background-color: #7397fc;
+    }
+    .desktop-left-line{
+        position: absolute;
+        top:283%;
+        left:28%;
+        width:11%;
+        height:5px;
+        background-color: #FFBD07;
+    }
+    .desktop-right-line{
+        position: absolute;
+        top:283%;
+        left:61%;
+        width:11%;
+        height:5px;
+        background-color: #FFBD07;
+    }
+    .desktop-bottom-v{
+        position: absolute;
+        top:290%;
+        left:18%;
+        width:5px;
+        height:187px;
+    }
+    .desktop-bottom-h{
+        position: absolute;
+        top:324%;
+        left:18%;
+        width:21%;
+        height:5px;
+    }
+    .desktop-bottomr-v{
+        position: absolute;
+        top:290%;
+        left:82%;
+        width:5px;
+        height:187px;
+    }
+    
+    .desktop-bottomr-h{
+        position: absolute;
+        top:324%;
+        left:61.5%;
+        width:21%;
+        height:5px;
+    }
      .avarage-group{
          display: flex;
-         justify-content: center;
+         justify-content: space-around;
      }
     .up-group{
         padding-left: 0px;
@@ -462,10 +550,61 @@
   @media only screen and (min-width:600px) and  (max-width:700px){
       .equipmentreplacement{
           padding: 30px 0;
+     
       }
+      .desktop-top-line{
+        position: absolute;
+        top:250%;
+        left:50%;
+        width:5px;
+        height:70px;
+    }
+    .desktop-left-line{
+        position: absolute;
+        top:279%;
+        left:28%;
+        width:11%;
+        height:5px;
+    }
+    .desktop-right-line{
+        position: absolute;
+        top:279%;
+        left:61%;
+        width:11%;
+        height:5px;
+    }
+    .desktop-bottom-v{
+        position: absolute;
+        top:286%;
+        left:15%;
+        width:5px;
+        height:187px;
+    }
+    .desktop-bottom-h{
+        position: absolute;
+        top:320%;
+        left:15%;
+        width:21%;
+        height:5px;
+    }
+    .desktop-bottomr-v{
+        position: absolute;
+        top:286%;
+        left:85%;
+        width:5px;
+        height:187px;
+    }
+    
+    .desktop-bottomr-h{
+        position: absolute;
+        top:320%;
+        left:63.5%;
+        width:22%;
+        height:5px;
+    }
     .avarage-group{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     .up-group{
         padding-left: 15px;
@@ -567,11 +706,11 @@
         z-index: 1;
     }
     .line-top{
-        height:100px;
+        height:125px;
         width:4px;
         background-color:#7397fc;
         position: absolute;
-        top:40%;
+        top:35%;
         left:50%;
         transform: translate(-50%,0%);
         
@@ -656,7 +795,7 @@
         height:90px;
         background-color: #5E4B84;
         position: absolute;
-        top:62%;
+        top:63%;
         left:20%;
         transform: translate(-50%, -50%);
     }
@@ -675,7 +814,7 @@
         height:90px;
         background-color: #5E4B84;
         position: absolute;
-        top:62%;
+        top:63%;
         left:82%;
         transform: translate(-50%, -50%);
     }
@@ -694,7 +833,7 @@
         top:70%;
         left:50%;
         transform: translate(-50%, -50%);
-        z-index: 10;
+        z-index: 2;
     }
     .circle-circle-five{
         position: absolute;

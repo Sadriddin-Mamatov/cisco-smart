@@ -16,9 +16,11 @@
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-video": "^1.5.3",
     "react-video-js-player": "^1.1.1",
     "reactjs-media": "^1.5.1",
     "styled-components": "^5.2.3",
+    "video-react": "^0.14.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

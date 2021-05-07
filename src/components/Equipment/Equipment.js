@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import VideoPlayer from 'react-video-js-player';
 import FirstImg from "../../img/Ellipse 3.png";
 import SecondImg from "../../img/Ellipse 5.png";
 import ThirdImg from "../../img/Ellipse 7.png";
@@ -10,17 +9,18 @@ import Close from '../../img/Close.png';
 import Settings from '../../img/Settings.png';
 import Human from '../../img/Man.png';
 import Back from '../../img/Back.png';
-// import { ReactVideo } from "reactjs-media";
-// import poster from '../../img/Rectangle 12.png';
+import 'video-react/dist/video-react.css';
+import { Player } from 'video-react';
+import poster from '../../img/Video.png';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-// import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
+import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
 import "aos/dist/aos.css";
 import "./Equipment.css";
 
 const Equipment =()=> {
-    // const videoSrc= Cisco;
+    const videoSrc= Cisco;
     const [open, setOpen] = useState(false);
     const [second, setSecond] = useState(false);
     const [third, setThird] = useState(false);
@@ -368,12 +368,9 @@ const Equipment =()=> {
                     </div>
                 <div className="video-box" data-aos="fade-down-left" data-aos-duration="1000">
                     <div>
-                      {/* <ReactVideo
-                        src={videoSrc}
-                        poster={poster}
-                        primaryColor="#456"
-                        className="service-video"
-                         /> */}
+                          <Player className="border border-dark video-player" poster={poster}>
+                             <source src={videoSrc} />
+                          </Player>
                    </div>
                     <button className="btn video-button">Проверить мое оборудование</button>
                 </div>
@@ -381,7 +378,5 @@ const Equipment =()=> {
           </div>
          </div>
         )
- 
 }
-
 export default Equipment;

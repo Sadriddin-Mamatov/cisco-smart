@@ -10,7 +10,7 @@ height:80px;
 font-family:'Poppins', sans-serif;
 top:0;
 width: 100%;
-z-index:999;
+z-index:10;
 color:#fff !important;
 }
 .navlogos{

@@ -8,7 +8,7 @@ import './ContactSection.css'
     const [state, setState] = useState({
      name: "", 
       email: "",
-      number: "",
+      phone_number: "",
       text:"",
       status: "Отправить"
     })
@@ -32,7 +32,7 @@ import './ContactSection.css'
              [e.target.name]: e.target.value})
     }
 
-    const {name, email, number, text, status} = state
+    const {name, email, phone_number, text, status} = state
     return ( 
         <div className="contacts" id="contactSection">
 
@@ -75,11 +75,11 @@ import './ContactSection.css'
                </div>
                <div>
                <input
-                  type="number"
+                  type="phone_number"
                   id="number"
                   placeholder="Телефон*"
-                  value={number}
-                  name='number'
+                  value={phone_number}
+                  name='phone_number'
                   onChange={handleChange}
                   className="input-label"
                   required

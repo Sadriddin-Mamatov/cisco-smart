@@ -75,6 +75,11 @@
     background-color: rgb(177, 221, 238);
     margin:6px 0;
 }
+.question span{
+    font-size:16px !important;
+    font-weight: 600;
+}
+
 
 @media only screen and (min-width:591px) and (max-width:876px){
     .faq-img-box{
@@ -152,5 +157,8 @@
     .question{
         background-color: rgb(177, 221, 238);
         padding:16px 0;
+    }
+    .question span{
+        font-size:12px !important;
     }
 }
