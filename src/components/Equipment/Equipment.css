@@ -149,7 +149,7 @@
     border-top-style:solid;
     border-right-style:solid; 
     border-bottom-style:dotted; 
-    border-left-style:dotted;
+    border-left-style:solid;
     border-radius:50%;
     color: #FFBD07;
 }
@@ -274,7 +274,7 @@
     border-top-style:solid;
     border-right-style:solid; 
     border-bottom-style:dotted; 
-    border-left-style:dotted;
+    border-left-style:solid;
     border-radius:50%;
     color: #7598FF;
 }
@@ -853,6 +853,9 @@
 
     .information{
         padding: 20px !important;
+    }
+    .information-p{
+        text-align:justify !important;
     }
     .equipmentreplacement{
         display: none !important; 

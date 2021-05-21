@@ -140,7 +140,7 @@ const LivecycleAdvantage = () => {
                                     </div>
                                     <div>
                                     <input
-                                        type="number"
+                                        type="text"
                                         id="number"
                                         placeholder="Телефон*"
                                         value={number}
