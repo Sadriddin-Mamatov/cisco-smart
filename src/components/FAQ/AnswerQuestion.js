@@ -18,7 +18,7 @@ const AnswerQuestion = () => {
                         <img src={Layer1} alt="layer1" className="faq-img"/>
                     </div>
                     <div className="faq-information">
-                        <h2 className="faq-header">FAQ (вопрос-ответ) по сервисным контрактам Cisco Smart Net</h2>
+                        <h2 className="faq-header">FAQ (вопрос-ответ) по сервисным контрактам SmartNet Total Care</h2>
                         <div className="faq-accordion">
                             <Accordion className="bottom-line">
                                 <AccordionSummary
@@ -30,7 +30,7 @@ const AnswerQuestion = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                 <Typography className="hidden-faq">
-                                    Cisco SMARTnet — это набор сервисов (сервисный контракт), предназначенных
+                                    SmartNet Total Care — это набор сервисов (сервисный контракт), предназначенных
                                     для обеспечения беспрерывной работы вашего оборудования Cisco.
                                 </Typography>
                                 </AccordionDetails>

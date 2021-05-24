@@ -10,7 +10,7 @@ const ServiceContact =()=> {
 
             <div className="second">
                 <div className="service-left" data-aos="fade-right"  data-aos-duration="600">
-                    <div className="second-text">Сервисные контракты Cisco Smart Net</div>
+                    <div className="second-text">Сервисные контракты SmartNet Total Care</div>
                     <a href="#service" className="btn second-button" >Получить консультацию</a>
                 </div>
                 <div className="service-img" data-aos="fade-left"  data-aos-duration="600">

@@ -269,7 +269,7 @@ const Equipment =()=> {
                     <div className="desktop-left-line"></div>
                     <div className="desktop-right-line"></div>
                         <div className="avarage-group">
-                                <div className="equipment-groups" data-aos="fade-right" data-aos-duration="1000">
+                                <div className="equipment-groups left-box" data-aos="fade-right" data-aos-duration="800">
                                         <div className="l29">
                                             <div className="group29">
                                                 <div className="cover">
@@ -279,7 +279,7 @@ const Equipment =()=> {
                                             </div>
                                         </div>
                                 </div>
-                                <div className="equipment-groups" data-aos="zoom-in" data-aos-duration="1000">
+                                <div className="equipment-groups middle-box" data-aos="zoom-out" data-aos-duration="800">
                                         <div className="l28">
                                             <div className="group28">
                                                 <div className="cover">
@@ -289,7 +289,7 @@ const Equipment =()=> {
                                             </div>
                                         </div>
                                 </div>
-                                <div className="equipment-groups" data-aos="fade-left" data-aos-duration="1000">
+                                <div className="equipment-groups rigth-box" data-aos="fade-left" data-aos-duration="800">
                                         <div className="l30">
                                             <div className="group30">
                                                 <div className="cover">
@@ -315,7 +315,7 @@ const Equipment =()=> {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>                 
              </div>
 
             <div className="information">
@@ -327,9 +327,8 @@ const Equipment =()=> {
                         <div className="inf">
                             <div className="vl1"></div>
                             <p className="information-p">
-                            Cервис бесплатный до окончания гарантийного
-                            срока оборудования.
-                            Авансовая замена вышедшего из строя оборудования:												
+                            
+                            Авансовая замена вышедшего из строя оборудования предоставляется:	
                             • в течение следующего рабочего дня с 9:00 до 17:00
                             (при условии регистрации неисправности и выдачи
                             заключения инженером Cisco Systems до 15:00
@@ -340,7 +339,8 @@ const Equipment =()=> {
                             указанных сроков в сторону их увеличения до 3-4 дней.
                             • Проверить доступность сервиса в вашем регионе
                             можно по ссылке Service Availability Matrix tool
-                        <a href="http://tools.cisco.com/apidc/sam/search.do">http://tools.cisco.com/apidc/sam</a>
+                        <a href="http://tools.cisco.com/apidc/sam/search.do">
+                            http://tools.cisco.com/apidc/sam/search.do</a>
                             </p>
                         </div>
                         <div className="inf">

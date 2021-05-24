@@ -55,7 +55,7 @@ export default function Header(props) {
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
                                 <a href='/' className="navlink">
-                                    Cisco Smart Net
+                                   SmartNet Total Care
                                 </a>
                             </NavItem>
                             <NavItem>
