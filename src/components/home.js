@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "aos/dist/aos.css";
-import {FaTimes} from "react-icons/fa";
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -50,6 +49,7 @@ const Home = ()=> {
                             aria-describedby="transition-modal-description"
                             className={classes.modal}
                             open={open}
+                            onClose={handleClick} 
                             closeAfterTransition
                             BackdropComponent={Backdrop}
                             BackdropProps={{
@@ -57,10 +57,10 @@ const Home = ()=> {
                             }}
                         >
                             <Fade in={open}>
-                            <div className={classes.paper}>
-                                <FaTimes onClick={handleClick}/>
-                                <h2 id="transition-modal-title">This place is for Video</h2>
-                                <p id="transition-modal-description">Enter your video</p>
+                            <div className="classes-paper">
+                                <video autoPlay className="modal-video" controls> 
+                                    <source src="http://161.35.117.200:8087/api/send/downloadFile/2/2_mp4.mp4" type="video/mp4" />
+                                </video>
                             </div>
                             </Fade>
                         </Modal>

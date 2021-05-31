@@ -50,7 +50,7 @@
 .classes-paper{
     width: 60%;
     border:3px solid rgb(16, 160, 148);
-    box-shadow: 0 0 5px 10px;
+    box-shadow: 0 0 5px 10px; 
 }
 .modal-video{
     width:100%;

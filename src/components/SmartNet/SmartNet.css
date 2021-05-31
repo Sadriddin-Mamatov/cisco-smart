@@ -22,11 +22,13 @@
     background-color: rgba(25, 33, 103, 0.8) !important;
 }
 .smartnet-video-box{
-    
     overflow: hidden !important;
     width:60%;
-    height: auto !important;
+    height: 680px !important;
+    background:#fff;
+    color: #fff;
 }
+
 .video-btn{
     padding: 10px 60px;
     margin-top:30px;

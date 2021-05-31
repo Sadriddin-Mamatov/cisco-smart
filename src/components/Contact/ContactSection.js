@@ -13,12 +13,13 @@ import './ContactSection.css'
       status: "Отправить"
     })
 
-   
+   const [submitted, setSubmitted]= useState(false);
 
    const handleSubmit = (e) => {
         e.preventDefault();  
-       console.log(state)
-        axios.post('https://jsonplaceholder.typicode.com/posts', state)
+        setSubmitted(true)
+        // alert("Заявка была успешно отправлена:")
+        axios.post('http://161.35.117.200:8087/api/send/application', state)
         .then((res) => {
             console.log(res)
         })
@@ -47,6 +48,7 @@ import './ContactSection.css'
                   <p className="contact-p">CA Distribution cisco@ca-dc.uz</p>
               </div>
             </div>  
+             {submitted ? <div className="successful">Заявка успешно отправлена</div> : " "}
              <h5 className="contact-label">Обратная связь</h5>
             <form onSubmit={handleSubmit} method="POST" className="forma">
                <div>

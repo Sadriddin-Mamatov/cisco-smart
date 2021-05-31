@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import LifecycleImage from "../../img/Illustration 03.png";
-// import VideoSrc from "../../video/Cisco_Smartnet_V6.mp4"
 import "./LivecycleAdvantage.css";
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -35,8 +34,9 @@ const LivecycleAdvantage = () => {
        })
       const handleSubmit = (e) => {
            e.preventDefault();  
+           alert("Заявка была успешно отправлена:")
           console.log(state)
-           axios.post('https://jsonplaceholder.typicode.com/posts', state)
+           axios.post('http://161.35.117.200:8087/api/send/application', state)
            .then((res) => {
                console.log(res)
            })
@@ -78,7 +78,7 @@ const LivecycleAdvantage = () => {
                         <Fade in={open}>
                         <div className="classes-paper">
                             <video autoPlay className="modal-video" controls> 
-                            {/* <source src={VideoSrc} type="video/mp4" /> */}
+                            <source src="http://161.35.117.200:8087/api/send/downloadFile/5/5_mp4.mp4" type="video/mp4" />
                             </video>
                         </div>
                         </Fade>

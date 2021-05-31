@@ -10,13 +10,14 @@ html{
 }
 body{
 
-  background-image: url(./img/Bgmain\ image.png);
+  background-image: url(http://161.35.117.200:8087/api/send/downloadFile/1/1_jpg.png);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
   overflow-x: hidden !important; 
+  padding-right: 0 !important;
  
 }
 
@@ -73,14 +74,30 @@ margin-bottom: 60px;
   color:#7598FF !important;
   box-shadow: 0 0 2px 5px #fff;
   }
-
+.handleClose{
+  float: right;
+  font-size:25px;
+  
+}
+.alert-success{
+  background-color: rgb(92, 228, 92) !important;
+  float: left !important;
+}
+.about-video-box{
+    text-align:center;
+    width:60%;
+    height: 680px !important;
+}
+.about-video{
+  width:100% !important;
+  height:680px !important;
+}
 .second{
   background: #fff;
   display: flex;
   justify-content:space-around;
   align-items:center;
   height:100vh;
-  
 }
 .service-left{
   width:50%;
