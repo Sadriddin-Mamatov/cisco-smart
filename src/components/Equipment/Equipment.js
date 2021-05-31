@@ -15,12 +15,10 @@ import poster from '../../img/Video.png';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import Cisco from "../../video/Гарантия или сервисный контракт.mp4";
 import "aos/dist/aos.css";
 import "./Equipment.css";
 
 const Equipment =()=> {
-    const videoSrc= Cisco;
     const [open, setOpen] = useState(false);
     const [second, setSecond] = useState(false);
     const [third, setThird] = useState(false);
@@ -339,7 +337,7 @@ const Equipment =()=> {
                             • Проверить доступность сервиса в вашем регионе
                             можно по ссылке Service Availability Matrix tool
                         <a href="http://tools.cisco.com/apidc/sam/search.do">
-                            http://tools.cisco.com/apidc/sam/search.do</a>
+                            http://tools.cisco.com</a>
                             </p>
                         </div>
                         <div className="inf">
@@ -368,7 +366,7 @@ const Equipment =()=> {
                 <div className="video-box" data-aos="fade-down-left" data-aos-duration="1000">
                     <div>
                           <Player className="border border-dark video-player" poster={poster}>
-                             <source src={videoSrc} />
+                             <source src="http://161.35.117.200:8087/api/send/downloadFile/3/3_mp4.mp4" />
                           </Player>
                    </div>
                     <button className="btn video-button">Проверить мое оборудование</button>

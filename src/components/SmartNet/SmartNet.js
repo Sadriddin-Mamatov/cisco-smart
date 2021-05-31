@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import VideoSrc from "../../video/Cisco_Smartnet_V6.mp4";
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
@@ -40,11 +39,11 @@ const SmartNet = () => {
                         }}
                         >
                         <Fade in={open}>
-                        <div className="smartnet-video-box">
-                            <video autoPlay className="modal-video" controls> 
-                            {/* <source src={VideoSrc} type="video/mp4" /> */}
-                            </video>
-                        </div>
+                        <div className="classes-paper">
+                                <video autoPlay className="modal-video" controls> 
+                                    <source src="http://161.35.117.200:8087/api/send/downloadFile/4/4_mp4.mp4" type="video/mp4" />
+                                </video>
+                            </div>
                         </Fade>
                     </Modal>
 
